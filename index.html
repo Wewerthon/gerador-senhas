@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Página Inicial</title>
+</head>
+
+<body class="bg-light">
+    <!-- Início Navbar -->
+    <header>
+        <nav class="navbar bg-dark justify-content-center">
+            <a href="#" class="navbar-brand text-white">Gerador de senhas</a>
+        </nav>
+    </header>
+
+    <!-- fim Navbar -->
+    <!-- Início content box -->
+
+    <div class="mx-auto mt-5 bg-white shadow rounded in_box">
+        <form class="d-flex flex-column justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center">
+                <input type="number" min="1" max="50" required><span class="ml-1" style="font-size: 22px;">Quantidade de caracteres</span>
+            </div>
+            <div class="d-flex flex-wrap">
+                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
+                    <span class="ml-1">Letra maiúscula</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
+                    <span class="ml-1">Letra minúscula</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
+                    <span class="ml-1">Números</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
+                    <span class="ml-1">Símbolos</span>
+                </div>
+                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
+                    <span class="ml-1">lorem ipsum</span>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-around align-items-center">
+                <button type="submit" class="btn btn-primary">Gerar</button>
+            </div>
+        </form>
+    </div>
+    <!-- Fim content box -->
+
+     <!-- Início content result box -->
+
+    <div class="mx-auto mt-2 bg-white shadow rounded in_box">
+        <input type="text" class="w-100 border-0 p-3">
+    </div>
+
+    <!-- Fim content result box -->
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
