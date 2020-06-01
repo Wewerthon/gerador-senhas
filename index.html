@@ -1,58 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Gerador</title>
 </head>
 
-<body class="bg-light">
+<body class="container bg-gray vertical-content-center">
     <!-- Início Navbar -->
     <header>
         <nav class="navbar bg-dark justify-content-center">
-            <a href="#" class="navbar-brand text-white">Gerador de senhas</a>
+            <a href="#" class="navbar-brand text-white font-weight-bold">Gerador de senhas</a>
         </nav>
     </header>
 
     <!-- fim Navbar -->
+
     <!-- Início content box -->
 
-    <div class="mx-auto mt-5 bg-white shadow rounded in_box">
-        <form class="d-flex flex-column justify-content-center align-items-center">
-            <div class="d-flex justify-content-center align-items-center">
-                <input type="number" min="1" max="50" required><span class="ml-1" style="font-size: 22px;">Quantidade de caracteres</span>
-            </div>
-            <div class="d-flex flex-wrap">
-                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
-                    <span class="ml-1">Letra maiúscula</span>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
-                    <span class="ml-1">Letra minúscula</span>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
-                    <span class="ml-1">Números</span>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
-                    <span class="ml-1">Símbolos</span>
-                </div>
-                <div class="d-flex justify-content-center align-items-center"><input type="checkbox">
-                    <span class="ml-1">lorem ipsum</span>
-                </div>
-            </div>
-            <div class="d-flex flex-column justify-content-around align-items-center">
-                <button type="submit" class="btn btn-primary">Gerar</button>
-            </div>
+    <main class="p-3 bg-light vertical-content">
+        <form class="form d-flex text-center row">
+          <div class="form-group col-md-3">
+            <label for="letraMaiuscula">Letra maiúscula</label>
+            <input type="checkbox" class="form-control" id="letraMaiuscula">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="letraMinuscula">Letra minúscula</label>
+            <input type="checkbox" class="form-control" id="letraMinuscula">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="numeros">Números</label>
+            <input type="checkbox" class="form-control" id="numeros">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="simbolos">Símbolos</label>
+            <input type="checkbox" class="form-control" id="simbolos">
+          </div>
+          <button type="submit" class="btn btn-success border-0 btn-block">Submit</button>
         </form>
-    </div>
+    </main>
     <!-- Fim content box -->
 
      <!-- Início content result box -->
 
-    <div class="mx-auto mt-2 bg-white shadow rounded in_box">
-        <input type="text" class="w-100 border-0 p-3">
+    <div class="mx-auto pt-4 pb-4 bg-light text-center">
+        <span type="text" id="resultado" class="w-100 border-0"></span>
     </div>
 
     <!-- Fim content result box -->
@@ -63,7 +58,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
